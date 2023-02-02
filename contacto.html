@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VetFriends</title>
+
+	<!-- Estilos propios -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contacto.css">
+
+	<!-- Estilos importados -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<button onclick="topFunction()" id="btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+	<header class="header">
+		<div class="logo">
+			<a href="/index.html"><img src="/img/logo.png" alt="logo de la marca"></a>
+		</div>
+		<nav>
+			<ul class="nav-links">
+				<li><a href="/index.html">Inicio</a></li>
+				<li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a id="nav-link__active" href="/contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="contenedor">
+		<div class="caja">
+			<div class="titulo">
+				<h1>CONTACTO</h1>
+			</div>
+			<div class="subtitulo">
+				<p>ESTAMOS DESEANDO AYUDARTE A MEJORAR LA SALUD DE TU MASCOTA.</p>
+			</div>
+		</div>
+	</section>
+	<div id="contacto"></div>
+	<section class="contacto" >
+		<div class="datos-contacto">
+			<div>
+				<h2>DATOS DE CONTACTO</h2>
+			</div>
+			<div class="texto-contacto">
+				<p class="texto-edit">Dirección:
+				<p>C/Falsa 123, Madrid</p>
+				</p>
+				<p class="texto-edit">Teléfono:
+				<p>91 22 33 444</p>
+				</p>
+				<p class="texto-edit">E-mail:
+				<p><a class="correo" href="mailto:vetfriends@gmail.com?subject=Solicitud de información"> vetfriends@gmail.com</a></p>
+				</p>
+			</div>
+			<div>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38440643522!2d-3.8196216779124517!3d40.43813108106935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1675189906595!5m2!1ses!2ses"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		<div class="formulario">
+			<div class="texto-fomulario">
+				<h2>FORMULARIO DE CONTACTO</h2>
+			</div>
+			<div>
+				<form action='' class='form'>
+					<p class='field required half'>
+						<label class='label required' for='name'>Nombre</label>
+						<input class='text-input' id='name' name='name' required type='text'>
+					</p>
+					<p class='field required half'>
+						<label class='label' for='email'>E-mail</label>
+						<input class='text-input' id='email' name='email' required type='email'>
+					</p>
+					<p class='field'>
+						<label class='label' for='message'>Mensaje</label>
+						<textarea class='textarea' cols='50' id='message' name='message' required rows='4'></textarea>
+					</p>
+					<p class='field'>
+						<input class='button' type='submit' value='ENVIAR'>
+					</p>
+				</form>
+			</div>
+			<div>
+				<h2>HORARIO</h2>
+			</div>
+			<div class="horarios">
+				<div class="texto-edit">
+					<p>Mañanas de L-V:</p>
+					<p>Tardes de L-V:</p>
+					<p>Mañanas Sábados:</p>
+					<p>Domingos y festivos:</p>
+				</div>
+				<div class="horas">
+					<p>9:00h a 14:00h</p>
+					<p>16:00h a 20:00h</p>
+					<p>9:00h a 14:00h</p>
+					<p>Cerrado</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div><a href="/index.html"><img src="/img/logo.png" alt="logo de la marca"></a></div>
+		<div><p><i class="fa-solid fa-location-dot"></i> C/ Falsa 123, Madrid</p></div>
+		<div><p><i class="fa-solid fa-phone"></i> 91 22 33 444</p></div>
+		<div><p><i class="fa-solid fa-envelope"></i> vetfriends@gmail.com</p></div>
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+		<a  href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+	</footer>
+	<div class="marca"><p >&copy; 2023 | VetFriends</p></div>
+	<script src="https://kit.fontawesome.com/8aa09984ca.js" crossorigin="anonymous"></script>
+	<script src="/js/index.js"></script>
+	<script src="/js/contacto.js"></script>
+</body>
+
+</html>

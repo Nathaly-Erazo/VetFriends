@@ -1,0 +1,207 @@
+/* IMAGEN Y TEXTO PÁGINA CONTACTO*/
+.contenedor {
+	background-image: url(/img/contacto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 40%;
+	padding: 0 2rem;
+	position: relative;
+}
+
+.caja {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 13.75rem 0.625rem;
+	position: relative;
+	width: 30%;
+}
+
+.titulo {
+	color: #fff;
+	font-size: 1.25rem;
+	text-align: center;
+	letter-spacing: 0.09em;
+	line-height: 1.2em;
+	margin-bottom: 1.25rem;
+}
+
+.subtitulo {
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 1.2em;
+	text-align: center;
+	margin-bottom: 0.3125rem;
+}
+
+/* DATOS DE CONTACTO */
+.contacto {
+	margin-left: 2rem;
+	margin-top: 2.5rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: row;
+}
+
+.datos-contacto {
+	width: 50%;
+	position: relative;
+	padding-left: 1.875rem;
+	padding-right: 0.9375rem;
+}
+
+h2 {
+	font-size: 3rem;
+	color: #9eafa2;
+}
+
+.texto-contacto {
+	display: block;
+	margin: 2rem 0;
+	font-size: 1.25rem;
+}
+
+.texto-edit {
+	font-weight: bold;
+	color: #af9eab;
+	margin: 0.5rem 0;
+}
+
+.correo {
+	text-decoration: underline;
+	color: #000;
+}
+.correo:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/* MAPA */
+iframe {
+	height: 20rem;
+	margin-bottom: 2rem;
+}
+
+/* HORARIO */
+.horarios {
+	display: flex;
+	font-size: 1.25rem;
+}
+
+.horas {
+	margin-top: 0.5rem;
+	margin-left: 2rem;
+}
+
+/* FORMULARIO */
+
+.form {
+	max-width: 50em;
+	margin-top:1rem;
+	margin-right: 3rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.form .button,
+.form .label,
+.form .textarea,
+.form .text-input {
+	padding: 1em 1.5em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	line-height: normal;
+	border: 1px solid transparent;
+	border-radius: 0;
+}
+
+.form .textarea,
+.form .text-input {
+	font: inherit;
+	line-height: normal;
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	padding-left: 0;
+	border-bottom-color: rgba(0, 0, 0, 0.3);
+	background: transparent;
+	outline: none;
+	color: black;
+}
+
+.form .label {
+	position: absolute;
+	z-index: 10;
+	pointer-events: none;
+	padding-left: 0;
+}
+
+.form .label {
+	top: 0;
+	left: 0;
+	color: #000;
+	transition: color 0.3s;
+}
+
+.active .form .label,
+.form .active .label {
+	font-size: 1rem;
+	line-height: 1;
+	font-weight: 600;
+	padding: 0;
+	color: #af9eab;
+	background: white;
+}
+
+.form.has-floated-label .field:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	border-bottom: 1px solid black;
+	transition: width 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.form.has-floated-label .field.focus:after {
+	width: 100%;
+}
+
+.form .button {
+	cursor: pointer;
+	background-color: #9eafa2;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 2rem;
+}
+
+.form .button:hover,
+.form .button:focus,
+.form .button:active {
+	color: #fff;
+	background: #af9eab;
+}
+
+.form .button:active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+.form .field {
+	position: relative;
+	width: 100%;
+	margin-bottom: 1.5em;
+	float: left;
+}
+
+.form .field.half {
+	width: calc(50% - 2em);
+	margin-right: 2em;
+}
+
+
+.form .field:last-child {
+	float: right;
+	width: auto;
+}
