@@ -1,10 +1,10 @@
 /* IMAGEN Y TEXTO PÁGINA INICIO */
 .contenedor {
-	background-image: url(/img/index/animales.jpg);
+	background-image: url(/img/servicios/servicios.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 100% 50%;
-	padding: 0 1.25rem;
+	background-position: 100% 40%;
+	padding: 0 2rem;
 	position: relative;
 }
 
@@ -13,22 +13,6 @@
 	padding: 13.75rem 0.625rem;
 	position: relative;
 	width: 30%;
-}
-
-.contenedor .caja a {
-	display: inline-block;
-	margin-top: 2.5rem;
-	margin-left: 11.25rem;
-	font-weight: bold;
-}
-
-.contenedor .caja a:hover {
-	display: inline-block;
-	margin-top: 2.5rem;
-	margin-left: 11.25rem;
-	background-color: #af9eab;
-	color: #fff;
-	font-weight: bold;
 }
 
 .titulo {
@@ -48,80 +32,40 @@
 	margin-bottom: 0.3125rem;
 }
 
-.button {
-	border-radius: 0.3125rem;
-	background-color: #9eafa2;
-	color: #fff;
-	font-size: 0.8125rem;
-	line-height: 1em;
-	padding: 1rem 1.5625rem;
-	text-decoration: none;
-}
-/* GALERÍA PÁGINA INICIO */
-.titulo2,
-.titulo3 {
+/* SERVICIOS */
+.titulo2{
 	text-align: center;
 	font-family: 'Merriweather', serif;
 	color: #9eafa2;
 	font-size: 2.5rem;
-	margin: 6.25rem 5rem;
+	margin: 1.5rem 5rem;
 }
 
-.galeria-cont {
-	display: flex;
-	justify-content: center;
-	justify-content: space-evenly;
+.grid-servicios{
+	padding: 2rem;
+	margin-left: 5rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	
 }
-
-.galeria-cont img {
-	width: 20%;
-	border-radius: 0.625rem;
-
-}
-
-.galeria-cont .img:hover {
-	transition: all 1s ease;
-	border-radius: 3.125rem;
-	filter: saturate(150%);
-}
-
-/* OPINIONES INICIO */
-.content-cards {
-	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-}
-
-.card {
-	background: #80707c;
-	width: 25%;
-	text-align: center;
-	height: 25rem;
-	box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, 0.5);
+.servicio{
+	display: block;
+	width: 70%;
+	background: #af9eab;
 	border-radius: 5px;
 }
-.card p{
-	text-align: justify;
+.grid-servicios a{
+	text-decoration: none;
 }
-
-.card img {
-	width: 40%;
-	border-radius: 50%;
-	margin: 1.25rem 0;
+.grid-servicios a:hover{
+	background: #9eafa2;
 }
-
-.card h3 {
-	margin-bottom: 1.25rem;
+.grid-servicios a h4{
 	color: #fff;
-	font-size: 1.875rem;
+	text-align: center;
+	padding: 1rem;
 }
-
-.card p {
-	color: #fff;
-	font-weight: 300;
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-	margin-bottom: 0.625rem;
-	margin-left: 0.625rem;
-	margin-right: 0.625rem;
+.servicio img{
+	width: 100%;
 }
