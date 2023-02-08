@@ -1,6 +1,6 @@
 /* IMAGEN Y TEXTO PÁGINA SOBRE NOSOTROS*/
 .contenedor {
-	background-image: url(/img/sobre_nosotros/sobre_nosotros.jpg);
+	background-image: url(../img/sobre_nosotros/sobre_nosotros.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 40%;

@@ -1,6 +1,6 @@
 /* IMAGEN Y TEXTO PÁGINA INICIO */
 .contenedor {
-	background-image: url(/img/servicios/servicios.jpg);
+	background-image: url(../img/servicios/servicios.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 40%;
@@ -54,6 +54,7 @@
 	width: 70%;
 	background: #af9eab;
 	border-radius: 5px;
+	box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, 0.5)
 }
 .grid-servicios a{
 	text-decoration: none;

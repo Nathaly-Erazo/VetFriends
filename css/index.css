@@ -1,6 +1,6 @@
 /* IMAGEN Y TEXTO PÁGINA INICIO */
 .contenedor {
-	background-image: url(/img/index/animales.jpg);
+	background-image: url(../img/index/animales.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 50%;
@@ -93,7 +93,7 @@
 }
 
 .card {
-	background: #80707c;
+	background: #af9eab;
 	width: 25%;
 	text-align: center;
 	height: 25rem;
