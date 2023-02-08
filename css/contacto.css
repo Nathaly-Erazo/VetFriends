@@ -1,6 +1,6 @@
 /* IMAGEN Y TEXTO PÁGINA CONTACTO*/
 .contenedor {
-	background-image: url(/img/contacto.jpg);
+	background-image: url(../img/contacto.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 40%;

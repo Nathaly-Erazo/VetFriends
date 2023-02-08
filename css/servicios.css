@@ -1,0 +1,72 @@
+/* IMAGEN Y TEXTO PÁGINA INICIO */
+.contenedor {
+	background-image: url(../img/servicios/servicios.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 40%;
+	padding: 0 2rem;
+	position: relative;
+}
+
+.caja {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 13.75rem 0.625rem;
+	position: relative;
+	width: 30%;
+}
+
+.titulo {
+	color: #fff;
+	font-size: 1.25rem;
+	text-align: center;
+	letter-spacing: 0.09em;
+	line-height: 1.2em;
+	margin-bottom: 1.25rem;
+}
+
+.subtitulo {
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 1.2em;
+	text-align: center;
+	margin-bottom: 0.3125rem;
+}
+
+/* SERVICIOS */
+.titulo2{
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	color: #9eafa2;
+	font-size: 2.5rem;
+	margin: 1.5rem 5rem;
+}
+
+.grid-servicios{
+	padding: 2rem;
+	margin-left: 5rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+.servicio{
+	display: block;
+	width: 70%;
+	background: #af9eab;
+	border-radius: 5px;
+	box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, 0.5)
+}
+.grid-servicios a{
+	text-decoration: none;
+}
+.grid-servicios a:hover{
+	background: #9eafa2;
+}
+.grid-servicios a h4{
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+}
+.servicio img{
+	width: 100%;
+}
