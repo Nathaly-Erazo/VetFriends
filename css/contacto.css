@@ -69,7 +69,8 @@ h2 {
 	text-decoration: underline;
 	color: #000;
 }
-.correo:hover{
+
+.correo:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
@@ -94,7 +95,7 @@ iframe {
 
 .form {
 	max-width: 50em;
-	margin-top:1rem;
+	margin-top: 1rem;
 	margin-right: 3rem;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -130,7 +131,6 @@ iframe {
 
 .form .label {
 	position: absolute;
-	z-index: 10;
 	pointer-events: none;
 	padding-left: 0;
 }
@@ -164,6 +164,10 @@ iframe {
 
 .form.has-floated-label .field.focus:after {
 	width: 100%;
+}
+
+#contador {
+	color: #af9eab;
 }
 
 .form .button {
@@ -204,4 +208,75 @@ iframe {
 .form .field:last-child {
 	float: right;
 	width: auto;
+}
+
+/* MODAL */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+	background-color: #af9eab;
+	margin: auto;
+	padding: 2rem;
+	width: 40%;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 1.25rem;
+}
+
+.modal-header h2 {
+	padding-top: 1rem;
+	color: #fff;
+	text-align: center
+}
+
+.modal-body {
+	padding: 2rem;
+}
+
+.modal-footer button {
+	background: #fff;
+	border: none;
+	font-size: 1.15rem;
+	padding: 0.25rem 0.5rem;
+	color: #80707c;
+	border-radius: 5px;
+	margin: 1rem;
+}
+
+#confirmBtn:hover {
+	background: #9eafa2;
+	color: #fff;
+}
+
+#cancelBtn:hover {
+	background: #af463e;
+	color: #fff;
+}
+
+.closeBtn {
+	color: #fff;
+	float: right;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+	color: #af463e;
+	text-decoration: none;
+	cursor: pointer;
 }

@@ -1,94 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>VetFriends</title>
 
-		<!-- Estilos propios -->
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/servicios.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VetFriends</title>
 
-		<!-- Estilos importados -->
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
-	</head>
-	<body>
-		<button onclick="topFunction()" id="btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-		<header class="header">
-			<div class="logo">
-				<a href="index.html"><img src="img/logo.png" alt="logo de la marca"></a>
+	<!-- Estilos propios -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/servicios.css">
+
+	<!-- Estilos importados -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<button onclick="topFunction()" id="btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+	<header class="header">
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="logo de la marca"></a>
+		</div>
+		<nav>
+			<ul class="nav-links">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+				<li><a id="nav-link__active" href="servicios.html">Servicios</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="contenedor">
+		<div class="caja">
+			<div class="titulo">
+				<h1>SERVICIOS</h1>
 			</div>
-			<nav>
-				<ul class="nav-links">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
-					<li><a id="nav-link__active" href="servicios.html">Servicios</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section class="contenedor">
-			<div class="caja">
-				<div class="titulo"><h1>SERVICIOS</h1></div>
-				<div class="subtitulo"><p>NUESTROS SERVICIOS ESTÁN ENFOCADOS EN GARANTIZAR LA CALIDAD SE VIDA DE TU MASCOTA.</p></div>
+			<div class="subtitulo">
+				<p>NUESTROS SERVICIOS ESTÁN ENFOCADOS EN GARANTIZAR LA CALIDAD SE VIDA DE TU MASCOTA.</p>
 			</div>
-		</section>
-		<section>
-			<h1 class="titulo2">NUESTROS SERVICIOS</h1>
-			<div class="grid-servicios">
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio1.jpg" alt="">
-					<h4>MEDICINA PREVENTIVA</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio2.jpg" alt="">
-					<h4>RADIOLOGÍA</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio3.jpg" alt="">
-					<h4>EXÓTICOS</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio4.jpeg" alt="">
-					<h4>CIRUJIA</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio5.jpg" alt="">
-					<h4>LABORATORIO PROPIO</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio6.jpg" alt="">
-					<h4>OBSTETRICIA</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio7.jpg" alt="">
-					<h4>VACUNACIÓN</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio8.jpg" alt="">
-					<h4>ALIMENTACIÓN</h4>
-				</a>
-				<a href="contacto.html#contacto" class="servicio">
-					<img src="img/servicios/servicio9.jpg" alt="">
-					<h4>ECOGRAFÍA</h4>
-				</a>
-			</div>
-		</section>
+		</div>
+	</section>
 
-		<footer>
-			<div><a href="index.html"><img src="img/logo.png" alt="logo de la marca"></a></div>
-			<div><p><i class="fa-solid fa-location-dot"></i> C/ Falsa 123, Madrid</p></div>
-			<div><p><i class="fa-solid fa-phone"></i> 91 22 33 444</p></div>
-			<div><p><i class="fa-solid fa-envelope"></i> vetfriends@gmail.com</p></div>
-			<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-			<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-			<a  href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-		</footer>
-		<div class="marca"><p >&copy; 2023 | VetFriends</p></div>
-		<script src="https://kit.fontawesome.com/8aa09984ca.js" crossorigin="anonymous"></script>
-		<script src="js/index.js"></script>
-	</body>
+	<div class="carousel">
+		<h1 class="titulo2">NUESTROS SERVICIOS</h1>
+		<div class="slides">
+			<div class="slide" onmouseover="mostrarTexto()">
+				<p class="text">MEDICINA PREVENTIVA</p>
+				<img src="img/servicios/servicio1.jpg" alt="Slide 1">
+				<div class="overlay" onmouseout="ocultarTexto()">
+					<div class="text-overlay">Los servicios de medicina preventiva veterinaria pueden incluir consultas
+						regulares con un veterinario, exámenes físicos completos, pruebas de laboratorio para detectar
+						enfermedades, vacunaciones y tratamientos para prevenir enfermedades transmitidas por parásitos.
+						También se pueden incluir consejos sobre la alimentación y el ejercicio adecuados para su
+						mascota, así como programas de entrenamiento y socialización para ayudar a mantener su bienestar
+						emocional y físico.</div>
+				</div>
+			</div>
+			<div class="slide" onmouseover="mostrarTexto()">
+				<p class="text">EXÓTICOS</p>
+				<img src="img/servicios/servicio2.jpg" alt="Slide 2">
+				<div class="overlay" onmouseout="ocultarTexto()">
+					<div class="text-overlay">Nuestro servicio veterinario de exóticos ofrece atención médica de alta
+						calidad para una amplia gama de animales exóticos, incluyendo reptiles, aves, roedores y
+						mamíferos pequeños. Contamos con un equipo de veterinarios altamente capacitados y
+						experimentados en el cuidado de animales exóticos y utilizamos las últimas técnicas y
+						tecnologías para garantizar un trato eficaz y ético a cada paciente. Ofrecemos una amplia gama
+						de servicios, desde consultas regulares hasta procedimientos médicos complejos, y trabajamos de
+						cerca con cada propietario de animal para garantizar que sus necesidades y preocupaciones sean
+						atendidas adecuadamente. ¡Visítenos hoy y vea por qué somos el hogar de la atención médica de
+						alta calidad para su animal exótico!</div>
+				</div>
+			</div>
+			<div class="slide" onmouseover="mostrarTexto()">
+				<p class="text">RADIOLOGÍA</p>
+				<img src="img/servicios/servicio3.jpg" alt="Slide 3">
+				<div class="overlay" onmouseout="ocultarTexto()">
+					<div class="text-overlay">Nuestro servicio de radiología veterinaria ofrece imágenes detalladas y
+						precisas para ayudar a los veterinarios a diagnosticar y tratar una amplia gama de afecciones en
+						animales. Contamos con tecnología de última generación, incluyendo equipos de radiología digital
+						y de rayos X, y un equipo de radiólogos altamente capacitados y experimentados que trabajan de
+						la mano con los veterinarios para garantizar una atención óptima para cada paciente. Ofrecemos
+						imágenes claras y precisas de los huesos, órganos internos y otras estructuras importantes del
+						animal, lo que nos permite detectar afecciones temprano y planificar un tratamiento eficaz.
+						¡Visítenos hoy para descubrir cómo podemos ayudar a su animal a obtener una atención médica de
+						alta calidad!</div>
+				</div>
+			</div>
+			<div class="slide" onmouseover="mostrarTexto()">
+				<p class="text">CIRUJIA</p>
+				<img src="img/servicios/servicio4.jpg" alt="Slide 4">
+				<div class="overlay" onmouseout="ocultarTexto()">
+					<div class="text-overlay">Nuestro servicio de cirugía veterinaria ofrece procedimientos quirúrgicos
+						avanzados y eficaces para ayudar a los animales a recuperarse de afecciones y lesiones. Contamos
+						con un equipo de cirujanos altamente capacitados y experimentados que utilizan las últimas
+						técnicas y tecnologías para garantizar una atención médica de alta calidad. Ofrecemos una amplia
+						gama de procedimientos, incluyendo cirugía de huesos, órganos internos y tejidos blandos, y
+						trabajamos de cerca con cada propietario de animal para garantizar una recuperación eficaz y sin
+						complicaciones. ¡Visítenos hoy para descubrir cómo podemos ayudar a su animal a obtener la mejor
+						atención quirúrgica posible!</div>
+				</div>
+			</div>
+			<div class="slide" onmouseover="mostrarTexto()">
+				<p class="text">OBSTETRICIA</p>
+				<img src="img/servicios/servicio5.jpg" alt="Slide 5">
+				<div class="overlay" onmouseout="ocultarTexto()">
+					<div class="text-overlay">Nuestro servicio de obstetricia veterinaria ofrece atención prenatal y de
+						parto de alta calidad para las madres y los recién nacidos. Contamos con un equipo de
+						veterinarios altamente capacitados y experimentados en el cuidado de las madres y los bebés
+						animales, y utilizamos las últimas técnicas y tecnologías para garantizar un parto seguro y sin
+						complicaciones. Ofrecemos una amplia gama de servicios, incluyendo consultas regulares,
+						monitoreo del embarazo y parto, y cuidados neonatales. Trabajamos de cerca con cada propietario
+						de animal para garantizar que sus necesidades y preocupaciones sean atendidas adecuadamente.
+						¡Visítenos hoy para descubrir cómo podemos ayudar a su animal durante esta etapa importante de
+						su vida!</div>
+				</div>
+			</div>
+			<div class="slide" onmouseover="mostrarTexto()">
+				<p class="text">VACUNACIÓN</p>
+				<img src="img/servicios/servicio6.jpg" alt="Slide 6">
+				<div class="overlay" onmouseout="ocultarTexto()">
+					<div class="text-overlay">Nuestro servicio de vacunación veterinaria brinda protección a los
+						animales contra una amplia variedad de enfermedades y enfermedades contagiosas. Contamos con un
+						equipo de veterinarios altamente capacitados y experimentados que trabajan de cerca con cada
+						propietario de animal para determinar la mejor planificación de vacunación para su mascota.
+						Ofrecemos una amplia gama de vacunas, incluyendo aquellas para enfermedades como la
+						parvovirosis, la moquillo, la rabia, y muchas más. Además, trabajamos de cerca con cada
+						propietario para garantizar que su mascota reciba un seguimiento regular y una atención
+						adecuada. ¡Visítenos hoy para proteger a su mascota contra las enfermedades y mantenerla
+						saludable por mucho tiempo!</div>
+				</div>
+			</div>
+		</div>
+		<div class="indicators">
+			<span class="indicator active"></span>
+			<span class="indicator"></span>
+			<span class="indicator"></span>
+			<span class="indicator"></span>
+			<span class="indicator"></span>
+			<span class="indicator"></span>
+		</div>
+		<a class="control prev">&lsaquo;</a>
+		<a class="control next">&rsaquo;</a>
+	</div>
+
+
+
+	<footer>
+		<div><a href="index.html"><img src="img/logo.png" alt="logo de la marca"></a></div>
+		<div>
+			<p ondblclick="copyInnerHTML(this)"><i class="fa-solid fa-location-dot"></i> C/ Falsa 123, Madrid</p>
+		</div>
+		<div>
+			<p ondblclick="copyInnerHTML(this)"><i class="fa-solid fa-phone"></i> 91 22 33 444</p>
+		</div>
+		<div>
+			<p ondblclick="copyInnerHTML(this)"><i class="fa-solid fa-envelope"></i> vetfriends@gmail.com</p>
+		</div>
+		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+		<a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+	</footer>
+	<div class="marca">
+		<p>&copy; 2023 | VetFriends</p>
+	</div>
+	<script src="https://kit.fontawesome.com/8aa09984ca.js" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+	<script src="js/navegacion.js"></script>
+	<script src="js/servicios.js"></script>
+</body>
+
 </html>
