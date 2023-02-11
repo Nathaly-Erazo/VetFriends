@@ -42,7 +42,7 @@
 		</div>
 	</section>
 	<div id="contacto"></div>
-	<section class="contacto" >
+	<section class="contacto">
 		<div class="datos-contacto">
 			<div>
 				<h2>DATOS DE CONTACTO</h2>
@@ -55,7 +55,8 @@
 				<p>91 22 33 444</p>
 				</p>
 				<p class="texto-edit">E-mail:
-				<p><a class="correo" href="mailto:vetfriends@gmail.com?subject=Solicitud de información"> vetfriends@gmail.com</a></p>
+				<p><a class="correo" href="mailto:vetfriends@gmail.com?subject=Solicitud de información">
+						vetfriends@gmail.com</a></p>
 				</p>
 			</div>
 			<div>
@@ -70,7 +71,7 @@
 				<h2>FORMULARIO DE CONTACTO</h2>
 			</div>
 			<div>
-				<form action='' class='form'>
+				<form class='form'>
 					<p class='field required half'>
 						<label class='label required' for='name'>Nombre</label>
 						<input class='text-input' id='name' name='name' required type='text'>
@@ -81,10 +82,12 @@
 					</p>
 					<p class='field'>
 						<label class='label' for='message'>Mensaje</label>
-						<textarea class='textarea' cols='50' id='message' name='message' required rows='4'></textarea>
+						<textarea oninput="contador()" class='textarea' cols='50' id='message' name='message' required
+							rows='4' maxlength="200"></textarea>
 					</p>
+					<span id="contador">200</span>
 					<p class='field'>
-						<input class='button' type='submit' value='ENVIAR'>
+						<input id ="sendButton" class='button' type='submit' value='ENVIAR' onclick="openModal()">
 					</p>
 				</form>
 			</div>
@@ -109,18 +112,45 @@
 	</section>
 	<footer>
 		<div><a href="index.html"><img src="img/logo.png" alt="logo de la marca"></a></div>
-		<div><p><i class="fa-solid fa-location-dot"></i> C/ Falsa 123, Madrid</p></div>
-		<div><p><i class="fa-solid fa-phone"></i> 91 22 33 444</p></div>
-		<div><p><i class="fa-solid fa-envelope"></i> vetfriends@gmail.com</p></div>
+		<div>
+			<p ondblclick="copyInnerHTML(this)"><i class="fa-solid fa-location-dot"></i> C/ Falsa 123, Madrid</p>
+		</div>
+		<div>
+			<p ondblclick="copyInnerHTML(this)"><i class="fa-solid fa-phone"></i> 91 22 33 444</p>
+		</div>
+		<div>
+			<p ondblclick="copyInnerHTML(this)"><i class="fa-solid fa-envelope"></i> vetfriends@gmail.com</p>
+		</div>
 		<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
 		<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
 		<a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-		<a  href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+		<a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
 	</footer>
-	<div class="marca"><p >&copy; 2023 | VetFriends</p></div>
+	<div class="marca">
+		<p>&copy; 2023 | VetFriends</p>
+	</div>
+	
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="closeBtn" onclick="closeModal()">&times;</span>
+				<h2>ANTES DE CONTINUAR...</h2>
+			</div>
+			<div class="modal-body">
+				<p>¿Quieres que usemos tu correo para subscribirte a nuestra Newsletter?</p>
+				<p>¡Recibirás ofertas exclusivas!</p>
+			</div>
+			<div class="modal-footer">
+				<button id="confirmBtn" onclick="closeModal()">¡Claro!</button>
+				<button id="cancelBtn" onclick="closeModal()">Paso</button>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://kit.fontawesome.com/8aa09984ca.js" crossorigin="anonymous"></script>
 	<script src="js/index.js"></script>
 	<script src="js/contacto.js"></script>
+	<script src="js/navegacion.js"></script>
 </body>
 
 </html>

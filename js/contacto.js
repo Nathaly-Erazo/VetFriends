@@ -37,7 +37,45 @@
 
     };
 
-    // initialize
     window.floatingLabel = new floatingLabel(document.querySelector('.form'));
 
 }).call(this);
+
+function contador() {
+    const textarea = document.getElementById("message");
+    const count = document.getElementById("contador");
+
+    count.textContent = textarea.maxLength - textarea.value.length;
+
+}
+
+function openModal() {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "block";
+}
+function closeModal() {
+    let modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+document.addEventListener('keydown', function() {
+	movimiento(event.key);
+})
+
+function movimiento(event){
+	if (event.key == "y") {
+		closeModal();
+	}
+	if (event.key == "n") {
+		closeModal();
+	}
+	if (event.key == "s") {
+		closeModal();
+	}
+    if (event.key == "Escape") {
+		closeModal();
+	}
+
+}
+window.onkeyup = movimiento;
+
