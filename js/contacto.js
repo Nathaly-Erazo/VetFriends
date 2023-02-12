@@ -1,3 +1,4 @@
+// FUNCIÓN PARA EL FOMULARIO
 (function () {
     var floatingLabel;
 
@@ -41,6 +42,7 @@
 
 }).call(this);
 
+// FUNCIÓN PARA EL CONTADOR DE CARATERES
 function contador() {
     const textarea = document.getElementById("message");
     const count = document.getElementById("contador");
@@ -49,9 +51,16 @@ function contador() {
 
 }
 
+// FUNCIÓN PARA EL  MODAL
 function openModal() {
-    let modal = document.getElementById("myModal");
-    modal.style.display = "block";
+    let nombre = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let mesage = document.getElementById("message").value;
+
+    if(nombre.length > 0 && email.length > 0 && mesage.length){
+        let modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    }
 }
 function closeModal() {
     let modal = document.getElementById("myModal");
@@ -62,6 +71,7 @@ document.addEventListener('keydown', function () {
     movimiento(event.key);
 })
 
+// FUNCIÓN QUE ASIGNA ACCIONES A LAS TECLAS
 function movimiento(event) {
     if (event.key == "y") {
         closeModal();
@@ -79,6 +89,7 @@ function movimiento(event) {
 }
 window.onkeyup = movimiento;
 
+// FUNCIÓN PARA MOSTRAR ALERTA
 const mostarAlerta = document.getElementById("alert");
 const mostrarBtn = document.getElementById("confirmBtn");
 const mostrarBtn2 = document.getElementById("cancelBtn");

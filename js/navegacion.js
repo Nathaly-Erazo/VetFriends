@@ -1,3 +1,4 @@
+// FUNCIÓN PARA COPIAR EL TEXTO CON DOBLE CLICK
 function copyInnerHTML(element) {
 	const textArea = document.createElement("textarea");
 	textArea.value = element.innerHTML;
@@ -9,7 +10,25 @@ function copyInnerHTML(element) {
 	textArea.remove();
 }
 
+// FUNCIÓN PARA BOTÓN QUE SUBE AL INICIO
+var boton = document.getElementById('btn');
 
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        boton.style.display = "block";
+    } else {
+        boton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// FUNCIÓN PARA NAVEGAR POR LA PÁGINA CON LOS NÚMEROS
 document.addEventListener('keydown', function () {
 	movimiento(event.key);
 })

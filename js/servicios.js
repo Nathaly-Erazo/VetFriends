@@ -1,4 +1,4 @@
-
+// FUNCIÓN CAROUSEL
 const carousel = document.querySelector('.carousel');
 const slides = document.querySelectorAll('.slide');
 const indicators = document.querySelectorAll('.indicator');
@@ -49,13 +49,12 @@ nextButton.addEventListener('click', nextSlide);
 updateIndicators();
 updateSlides();
 
+// FUNCIÓN OVERLAY
 function mostrarTexto(){ 
     let texto = document.querySelectorAll(".overlay");
     texto.forEach (function(item){
         item.className = 'overlay-hovered';
     })
-    
-
 }
 
 function ocultarTexto(){
@@ -63,5 +62,13 @@ function ocultarTexto(){
     texto.forEach (function(item){
         item.className = 'overlay';
     })
+}
 
+// FUNCIÓN MANTENER PULSADO
+function cambiarPagina(){
+    document.getElementById('enlace').style.color = "#af9eab";
+}
+function volverPagina(){
+    document.getElementById('enlace').style.color = "#9eafa2";
+    window.location.href = 'contacto.html#contacto';
 }

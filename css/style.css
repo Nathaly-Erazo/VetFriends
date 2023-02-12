@@ -132,3 +132,40 @@ footer img {
 	text-align: center;
 	padding-bottom: 0.625rem;
 }
+
+.hamburger{
+	font-size: 1.5rem;
+	display: none;
+}
+
+/* MEDIA QUERYS */
+
+
+
+@media (max-width: 575.98px) {
+	body{
+		width: auto;
+	}
+	
+	.header{
+		flex-direction: column;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: #80707c;
+		z-index: 10;
+	}
+	.hamburger{
+		
+		font-size: 1.5rem;
+		display: block;
+	}
+}
+
+@media (min-width: 576px) {
+	
+	.hamburger{
+		display: none;
+	}
+}

@@ -169,6 +169,11 @@ iframe {
 #contador {
 	color: #af9eab;
 }
+.nota {
+	font-size: 0.85rem;
+	color: #af9eab;
+	margin-top: 0.5rem;
+}
 
 .form .button {
 	cursor: pointer;
