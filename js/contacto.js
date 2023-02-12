@@ -58,24 +58,40 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-document.addEventListener('keydown', function() {
-	movimiento(event.key);
+document.addEventListener('keydown', function () {
+    movimiento(event.key);
 })
 
-function movimiento(event){
-	if (event.key == "y") {
-		closeModal();
-	}
-	if (event.key == "n") {
-		closeModal();
-	}
-	if (event.key == "s") {
-		closeModal();
-	}
+function movimiento(event) {
+    if (event.key == "y") {
+        closeModal();
+    }
+    if (event.key == "n") {
+        closeModal();
+    }
+    if (event.key == "s") {
+        closeModal();
+    }
     if (event.key == "Escape") {
-		closeModal();
-	}
+        closeModal();
+    }
 
 }
 window.onkeyup = movimiento;
 
+const mostarAlerta = document.getElementById("alert");
+const mostrarBtn = document.getElementById("confirmBtn");
+const mostrarBtn2 = document.getElementById("cancelBtn");
+
+mostrarBtn.addEventListener("click", (e) => {
+    mostarAlerta.classList.remove("hidden");
+    setTimeout(function () {
+        mostarAlerta.classList.add("hidden");
+    }, 2000);
+})
+mostrarBtn2.addEventListener("click", (e) => {
+    mostarAlerta.classList.remove("hidden");
+    setTimeout(function () {
+        mostarAlerta.classList.add("hidden");
+    }, 2000);
+})

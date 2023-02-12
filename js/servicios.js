@@ -50,9 +50,8 @@ updateIndicators();
 updateSlides();
 
 function mostrarTexto(){ 
-    console.log('Over')
     let texto = document.querySelectorAll(".overlay");
-    texto.forEach (function(item,index){
+    texto.forEach (function(item){
         item.className = 'overlay-hovered';
     })
     
@@ -60,9 +59,8 @@ function mostrarTexto(){
 }
 
 function ocultarTexto(){
-    console.log('Out')
     let texto = document.querySelectorAll('.overlay-hovered');
-    texto.forEach (function(item,index){
+    texto.forEach (function(item){
         item.className = 'overlay';
     })
 

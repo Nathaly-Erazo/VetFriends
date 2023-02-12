@@ -175,7 +175,7 @@ iframe {
 	background-color: #9eafa2;
 	color: white;
 	text-align: center;
-	border-radius: 5px;
+	border-radius: 30px 15px;
 	margin-right: 2rem;
 }
 
@@ -252,7 +252,7 @@ iframe {
 	font-size: 1.15rem;
 	padding: 0.25rem 0.5rem;
 	color: #80707c;
-	border-radius: 5px;
+	border-radius: 30px 15px;
 	margin: 1rem;
 }
 
@@ -279,4 +279,22 @@ iframe {
 	color: #af463e;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+/* ALERTA DE FORMULARIO ENVIADO */
+.myAlert{
+	background:#708073;
+	color: #fff;
+	border-radius: 5px;
+	padding: 1rem;
+	text-align: center;
+	width: max-content;
+	position: fixed;
+	top: 5%;
+	left: 40%;
+	right: 0;
+	z-index: 1;
+}
+.hidden{
+	display: none;
 }
