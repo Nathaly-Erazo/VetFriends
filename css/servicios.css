@@ -116,7 +116,7 @@
 	right: 0;
 }
 
-/* ANIMAACIÓN SERVICIOS */
+/* ANIMACIÓN SERVICIOS */
 .overlay {
 	position: absolute;
 	bottom: 0;
@@ -134,7 +134,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba( 158, 175, 162,	0.7);
+	background-color: rgba(158, 175, 162, 0.7);
 	overflow: hidden;
 	width: 100%;
 	height: 94%;
@@ -158,27 +158,83 @@
 	flex-wrap: row;
 	margin: 5rem;
 }
+
 .titulo3 {
 	text-align: left;
 	font-family: 'Merriweather', serif;
 	color: #9eafa2;
 	font-size: 2rem;
 }
+
 .text-estilo {
 	margin-top: 1rem;
 	font-size: 1.2rem;
 	text-align: left;
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
 	color: #af9eab;
 	margin-left: 1rem;
 }
 
 /* MÁS INFORMACIÓN */
-.enlace-contacto{
+.enlace-contacto {
 	text-align: center;
 	text-decoration: underline;
 	font-size: 1.5rem;
 	color: #9eafa2;
 	font-weight: bold;
+}
+
+/* MEDIA QUERYS */
+@media screen and (max-width: 768px) {
+	/* IMAGEN Y TEXTO PÁGINA INICIO */
+	.contenedor {
+		background-position: 50%;
+	}
+
+	.caja {
+		width: 50%;
+	}
+
+	.subtitulo {
+		font-size: 1rem;
+		line-height: 1.2em;
+	}
+
+	/* SERVICIOS */
+	.carousel {
+		width: 100%;
+	}
+
+	.overlay-hovered {
+		height: 94.2%;
+	}
+
+	.text-overlay {
+		font-size: 0.75rem;
+		top: 35%;
+		width: 70%;
+	}
+	
+	.control {
+		padding: 20px 10px;
+	}
+
+	/* DESCUENTOS */
+	.descuentos {
+		display: block;
+		flex-direction: column;
+		margin-left: 4rem;
+	}
+	
+	.text-estilo {
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+	.titulo3 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
 }

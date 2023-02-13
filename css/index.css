@@ -25,7 +25,6 @@
 .contenedor .caja a:hover {
 	display: inline-block;
 	margin-top: 2.5rem;
-	margin-left: 11.25rem;
 	background-color: #af9eab;
 	color: #fff;
 	font-weight: bold;
@@ -88,7 +87,7 @@
 
 /* OPINIONES INICIO */
 .tarjetas-grupo {
-	width: 1100px;
+	width: 0;
 	margin: 50px auto;
 	display: flex;
 	justify-content: center;
@@ -121,6 +120,7 @@
 	backface-visibility: hidden;
 
 }
+
 .tarjeta-individual:hover .tarjeta {
 	transform: rotateY(180deg);
 
@@ -139,6 +139,7 @@
 	margin: 1.25rem 0;
 	margin: 1rem 0;
 }
+
 .atras p {
 	margin-top: 1rem;
 }
@@ -153,4 +154,55 @@
 	background: #af9eab;
 	color: #fff;
 	text-align: center;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 768px) {
+	/* IMAGEN Y TEXTO PÁGINA INICIO */
+	.contenedor {
+		background-position: 50%;
+		width: 84%;
+	}
+
+	.caja {
+		width: 70%;
+	}
+
+	.contenedor .caja a {
+		margin-left: 4rem;
+	}
+
+	.titulo {
+		line-height: 1.5em;
+	}
+
+	.subtitulo {
+		font-size: 1rem;
+	}
+
+	.titulo2,
+	.titulo3 {
+		font-size: 2rem;
+		margin-right: 4rem;
+	}
+
+	/* GALERÍA PÁGINA INICIO */
+	.galeria-cont {
+		display: block;
+	}
+
+	.galeria-cont img {
+		width: 70%;
+		border-radius: 0.625rem;
+		margin-left: 4rem;
+		margin-bottom: 1rem;
+	}
+
+	/* OPINIONES INICIO */
+	.tarjetas-grupo {
+		display: block;
+		justify-content: center;
+		margin-left: 3rem;
+	}
 }

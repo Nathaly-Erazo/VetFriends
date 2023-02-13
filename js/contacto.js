@@ -53,14 +53,14 @@ function contador() {
 
 // FUNCIÓN PARA EL  MODAL
 function openModal() {
-    let nombre = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let mesage = document.getElementById("message").value;
+    // let nombre = document.getElementById("name").value;
+    // let email = document.getElementById("email").value;
+    // let message = document.getElementById("message").value;
 
-    if(nombre.length > 0 && email.length > 0 && mesage.length){
+    // if(nombre.length > 0 && email.length > 0 && message.length){
         let modal = document.getElementById("myModal");
         modal.style.display = "block";
-    }
+    // }
 }
 function closeModal() {
     let modal = document.getElementById("myModal");

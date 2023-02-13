@@ -143,6 +143,7 @@ sup {
 
 .accordion {
 	margin-bottom: 1rem;
+	transition: .5s ease;
 }
 
 .panel {
@@ -154,12 +155,82 @@ sup {
 	overflow: hidden;
 	width: 96.4%;
 	background: rgba(175, 158, 171, 0.2);
+	transition: .5s ease;
 }
 
 .fa-paw {
 	color: #af9eab;
+	margin-right: 1rem;
 }
 
 .accordion div:first-of-type p {
 	margin-bottom: 1rem;
+}
+
+/* MEDIA QUERYS */
+@media screen and (max-width: 768px) {
+
+	/* IMAGEN Y TEXTO PÁGINA SOBRE NOSOTROS*/
+	.contenedor {
+		background-position: 40%;
+	}
+
+	.caja {
+		width: 50%;
+	}
+
+	.titulo {
+		font-size: 1.2rem;
+		letter-spacing: 0.09em;
+		line-height: 1.5em;
+	}
+
+	.subtitulo {
+		font-size: 1rem;
+		line-height: 1.2em;
+	}
+
+	/* HISTORIA */
+	.historia {
+		display: block;
+		max-width: 80rem;
+		padding: 2rem;
+		border-radius: 5px;
+	}
+
+	.texto-historia {
+		font-size: 1rem;
+		margin-left: 1rem;
+	}
+
+	.imagen-historia img {
+		width: 90%;
+		height: 100%;
+		border-radius: 3px;
+		margin-left: 1rem;
+	}
+
+	/* EQUIPO */
+	.content-cards {
+		display: block;
+	}
+
+	.card {
+		width: 80%;
+		text-align: center;
+		height: 15rem;
+		margin-bottom: 4rem;
+		margin-left: 2.5rem;
+	}
+
+	/* VALORES, MISIÓN, VISIÓN */
+	.accordion-block {
+		margin: 2rem;
+
+	}
+
+	.panel {
+		width: 90%;
+		font-size: 1rem;
+	}
 }

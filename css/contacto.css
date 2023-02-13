@@ -169,6 +169,7 @@ iframe {
 #contador {
 	color: #af9eab;
 }
+
 .nota {
 	font-size: 0.85rem;
 	color: #af9eab;
@@ -226,7 +227,6 @@ iframe {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -287,8 +287,8 @@ iframe {
 }
 
 /* ALERTA DE FORMULARIO ENVIADO */
-.myAlert{
-	background:#708073;
+.myAlert {
+	background: #708073;
 	color: #fff;
 	border-radius: 5px;
 	padding: 1rem;
@@ -300,6 +300,75 @@ iframe {
 	right: 0;
 	z-index: 1;
 }
-.hidden{
+
+.hidden {
 	display: none;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 768px) {
+
+	/* IMAGEN Y TEXTO PÁGINA CONTACTO*/
+	.contenedor {
+		width: 84%;
+	}
+
+	.caja {
+		width: 50%;
+	}
+
+	.subtitulo {
+		font-size: 1rem;
+	}
+
+	/* DATOS DE CONTACTO */
+	.contacto {
+		display: block;
+		text-align: center;
+	}
+
+	.datos-contacto {
+		padding-left: 5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	/* MAPA */
+	iframe {
+		height: 20rem;
+		width: 22rem;
+		margin-bottom: 2rem;
+		margin-left: -5.5rem;
+	}
+
+	/* FORMULARIO */
+	.form {
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
+
+	/* MODAL */
+	.modal-content {
+		width: 70%;
+	}
+
+	.modal-header h2 {
+		font-size: 2rem;
+	}
+
+	/* HORARIO */
+	.horarios {
+		display: flex;
+		margin-left: -1rem;
+		margin-right: 0;
+	}
+
+	/* ALERTA DE FORMULARIO ENVIADO */
+	.myAlert {
+		left: 30%;
+	}
 }
